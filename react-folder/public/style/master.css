@@ -1,0 +1,87 @@
+/*
+COLOR SCHEME:
+dark blue: rgba(44, 62, 80,1.0)
+dark blue-grey: rgba(52, 73, 94,1.0)
+white: rgba(236, 240, 241,1.0)
+accent-red: rgba(192, 57, 43,1.0)
+
+*/
+
+body {
+  /*background: url("../media/welcome-3.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;*/
+  background-color:rgba(44, 62, 80,1.0);
+
+}
+
+.headline {
+  padding-top:.83em;
+  padding-bottom:.83em;
+}
+
+.uandi {
+  margin-top: -.2em;
+}
+
+.lightBox {
+  background-color: rgba(236, 240, 241,1.0);
+  margin-top: 1em;
+  margin-bottom: 1em;
+  border-radius: 8px;
+}
+
+.blueBox {
+  background-color: rgba(52, 73, 94,1.0);
+}
+
+.postContent {
+  /*background-color: rgba(219, 247, 255, 0.87);*/
+  padding-left: .83em;
+  padding-right:.83em;
+  padding-top: .33em;
+}
+
+.nameLine {
+  padding-left: 1em;
+  border-top: .1em dashed rgba(192, 57, 43,1.0);
+}
+
+.borderBottomAccent {
+  border-bottom: .1em dashed rgba(192, 57, 43,1.0);
+}
+
+.deleteButton {
+  margin-top: 1em;
+  margin-right: 1em;
+}
+
+.deleteBoard {
+  padding-top: 2.73em;
+}
+
+.spaceBottomXL {
+  padding-bottom: 6em;
+}
+
+.spaceBottomM {
+  padding-bottom: 2em;
+}
+
+.spaceBottomS {
+  padding-bottom: 1em;
+}
+
+.spaceTopM {
+  padding-top: 2em;
+}
+
+.spaceTopS {
+  padding-top: 1em;
+}
+
+.spaceLeftM {
+  padding-left: 2em;
+}
