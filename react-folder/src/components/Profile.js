@@ -88,7 +88,7 @@ class Profile extends Component {
     let dropdownEdit = this.dropdown(this.props.editing);
     let boards = this.props.boards.map((board) => {
       return (<Col className="borderBottomAccent lightBox spaceBottomS spaceTopS">
-        <h3><Link onClick={this.handleOnClick.bind(this)} value={board.id}>{board.title}</Link></h3>
+        <h3><Link className="blackLinks" onClick={this.handleOnClick.bind(this)} value={board.id}>{board.title.toLowerCase()}</Link></h3>
       </Col>)
     })
 
@@ -107,6 +107,8 @@ class Profile extends Component {
         </Col>
       </Row>
       <Row>
+      </Row>
+      <Row>
         <Col lg={6} md={6} sm={6} xs={6} lgOffset={3} mdOffset={3} smOffset={3} xsOffset={3} className="spaceBottomM">
           <form onSubmit={this.handleCreate.bind(this)} value={this.props.currentUser.id}>
             <FormGroup className="spaceBottomS">
@@ -123,7 +125,7 @@ class Profile extends Component {
       <Row>
         <Col lg={8} md={8} sm={8} xs={8} lgOffset={2} mdOffset={2} smOffset={2} xsOffset={2} className="blueBox spaceTopS spaceBottomS">
 
-          <h2>Your Boards</h2>
+          <p className="lesserHeadings">Your Boards</p>
             <div>
             <Col lg={8} md={8} sm={8} xs={8} lgOffset={2} mdOffset={2} smOffset={2} xsOffset={2}>
                 {boards}

@@ -13,8 +13,7 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;*/
-  background-color:rgba(44, 62, 80,1.0);
-
+  background-color: #F0FFFF;
 }
 
 .headline {
@@ -24,33 +23,39 @@ body {
 
 .uandi {
   margin-top: -.2em;
+  color: black;
+}
+
+.centerLogin {
+  margin: 0 auto;
 }
 
 .lightBox {
-  background-color: rgba(236, 240, 241,1.0);
+  background-color: white;
   margin-top: 1em;
   margin-bottom: 1em;
   border-radius: 8px;
 }
 
 .blueBox {
-  background-color: rgba(52, 73, 94,1.0);
+  background-color: #F0FFFF;
+  border-radius: 20px;
 }
 
 .postContent {
   /*background-color: rgba(219, 247, 255, 0.87);*/
   padding-left: .83em;
   padding-right:.83em;
-  padding-top: .33em;
+  padding-top: .13em;
 }
 
 .nameLine {
   padding-left: 1em;
-  border-top: .1em dashed rgba(192, 57, 43,1.0);
+  border-top: .1em;
 }
 
 .borderBottomAccent {
-  border-bottom: .1em dashed rgba(192, 57, 43,1.0);
+  border-bottom: .1em;
 }
 
 .deleteButton {

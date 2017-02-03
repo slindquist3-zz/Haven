@@ -76,7 +76,7 @@ class Board extends Component {
       <Row className="spaceBottomXL">
         <Col lg={12} md={12} sm={12} xs={12}>
           <h1 className="text-center">{this.props.board.title}</h1>
-          <h2 className="text-center">This board is between: {this.props.board.users[0].name} & {this.props.board.users[1].name}</h2>
+          <h3 className="text-center">This board belongs to {this.props.board.users[0].name} & {this.props.board.users[1].name}</h3>
         </Col>
       </Row>
 

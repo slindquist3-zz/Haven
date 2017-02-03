@@ -26,9 +26,7 @@ class Login extends Component {
 
   render() {
     return (
-    <Row>
-      <Col lg={3} md={3} sm={3}>
-        <h4 className="whiteText">Log In</h4>
+    <Row className="form-horizontal">
         <form onSubmit={this.handleSubmit.bind(this)}>
           <FormGroup>
             <ControlLabel className="whiteText">Email</ControlLabel>
@@ -36,7 +34,6 @@ class Login extends Component {
               type="text"
               placeholder="enter email"
               onChange={this.handleEmailChange.bind(this)}/>
-            <HelpBlock>Ex: you@uandme.com</HelpBlock>
           </FormGroup>
           <FormGroup>
             <ControlLabel className="whiteText">Password</ControlLabel>
@@ -45,10 +42,10 @@ class Login extends Component {
             placeholder="enter password"
             onChange={this.handlePasswordChange.bind(this)}/>
           </FormGroup>
-
-          <Button type="submit">Login</Button>
+          <FormGroup>
+            <Button className= "whiteButton" type="submit">Login</Button>
+          </FormGroup>
       </form>
-      </Col>
     </Row>
     )
   }
