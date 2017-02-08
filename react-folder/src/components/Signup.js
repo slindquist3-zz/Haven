@@ -31,27 +31,29 @@ class Signup extends Component {
   render(){
 
     return(
-      <Row>
-        <Col lg={3} md={3} sm={3}>
-          <h4 className="whiteText">Sign Up</h4>
-          <form onSubmit={this.handleSubmit.bind(this)}>
+      <Row >
+        <Col lg={3} md={3} sm={3} className="centered">
+          <div>
+          <h3 className="whiteText">Sign Up</h3>
+          <form onSubmit={this.handleSubmit.bind(this)} className="centered">
             <FormGroup>
               <ControlLabel className="whiteText">Name</ControlLabel>
-              <FormControl type="text" placeholder="enter name" onChange={this.handleNameChange.bind(this)}/>
+              <FormControl type="text" onChange={this.handleNameChange.bind(this)}/>
             </FormGroup>
 
             <FormGroup>
               <ControlLabel className="whiteText">Email</ControlLabel>
-              <FormControl type="text" placeholder="enter email" onChange={this.handleEmailChange.bind(this)}/>
+              <FormControl type="text" onChange={this.handleEmailChange.bind(this)}/>
             </FormGroup>
 
             <FormGroup>
               <ControlLabel className="whiteText">Password</ControlLabel>
-              <FormControl type="password" placeholder="enter password" onChange={this.handlePasswordChange.bind(this)}/>
+              <FormControl type="password" onChange={this.handlePasswordChange.bind(this)}/>
             </FormGroup>
 
             <Button type="submit">Signup</Button>
           </form>
+        </div>
         </Col>
       </Row>
     )

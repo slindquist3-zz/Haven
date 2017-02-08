@@ -32,14 +32,12 @@ class Login extends Component {
             <ControlLabel className="whiteText">Email</ControlLabel>
             <FormControl
               type="text"
-              placeholder="enter email"
               onChange={this.handleEmailChange.bind(this)}/>
           </FormGroup>
           <FormGroup>
             <ControlLabel className="whiteText">Password</ControlLabel>
             <FormControl
             type="password"
-            placeholder="enter password"
             onChange={this.handlePasswordChange.bind(this)}/>
           </FormGroup>
           <FormGroup>

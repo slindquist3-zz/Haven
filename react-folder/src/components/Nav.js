@@ -20,9 +20,9 @@ class Nav extends Component {
       return <li role="presentation"><Link to={item.URI} className="whiteText"> {item.name}</Link></li>
     })
     return(
-      <Row>
+      <Row className="blackBackground">
           <nav>
-            <ul className="nav nav-pills">
+            <ul className="nav nav-pills rounded">
               {formattedLinks}
             </ul>
           </nav>

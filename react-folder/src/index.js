@@ -13,8 +13,10 @@ import '../public/style/typography.css'
 // import App from './components/App';
 
 ReactDOM.render(
+  <div className="c">
   <Provider store={store}>
     <Router history={browserHistory} routes={routes}/>
-  </Provider>,
+  </Provider>
+</div>,
   document.getElementById('root')
 );

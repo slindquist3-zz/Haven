@@ -4087,12 +4087,20 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .nav-pills > li {
   float: left;
+  margin-left: 27em
+
 }
 .nav-pills > li > a {
-  border-radius: 4px;
+  border-radius: 1em;
+  background-color: white
+}
+
+.nav-pills > li > a:hover {
+    border-radius: 1em;
+
 }
 .nav-pills > li + li {
-  margin-left: 2px;
+  margin-left: 20px;
 }
 .nav-pills > li.active > a,
 .nav-pills > li.active > a:hover,

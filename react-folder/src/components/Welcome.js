@@ -32,13 +32,12 @@ class Welcome extends Component {
     return(
       <div>
         <Row>
-          <Col lg={12}>
-            <h6 className="whiteText headline spaceBottomS">a more personal social media</h6>
-          </Col>
-        </Row>
+            <p className="logo text-center">Duet</p>
 
+        </Row>
         <Row>
-            <h1 className="uandi text-center">u & i</h1>
+          <Col className="col-md-8 col-md-offset-2">
+          </Col>
         </Row>
           <Login />
       </div>

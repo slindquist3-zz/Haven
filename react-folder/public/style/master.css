@@ -1,31 +1,49 @@
 /*
-COLOR SCHEME:
-dark blue: rgba(44, 62, 80,1.0)
-dark blue-grey: rgba(52, 73, 94,1.0)
-white: rgba(236, 240, 241,1.0)
-accent-red: rgba(192, 57, 43,1.0)
+light blue: #DFE9E0
+melon: #F3E3CA
 
 */
 
+
+
 body {
-  /*background: url("../media/welcome-3.jpg") no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;*/
-  background-color: #F0FFFF;
+  background: linear-gradient(to right, #ffccac 0%, #ffccac 10%, white 10%, white 90%, #c1e1dc 90%, #c1e1dc 100%);
+}
+
+/*body {
+      height: 100%;
+      background: linear-gradient(to right,  red 20%, green 20%, orange);
+    }*/
+
+/*.background {
+  background-color: blue;
+}*/
+
+h1 {
+  font-size: 3em;
+}
+
+.tagline {
+  font-size: 1.5em
+}
+
+.centered {
+  margin: 0 auto;
+}
+
+.rounded {
+  border-radius: 20em
+}
+
+.logo {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 14em;
+
 }
 
 .headline {
   padding-top:.83em;
   padding-bottom:.83em;
-}
-
-update
-
-.uandi {
-  margin-top: -.2em;
-  color: black;
 }
 
 .centerLogin {
@@ -40,7 +58,7 @@ update
 }
 
 .blueBox {
-  background-color: #F0FFFF;
+  background-color: white;
   border-radius: 20px;
 }
 
@@ -71,6 +89,10 @@ update
 
 .spaceBottomXL {
   padding-bottom: 6em;
+}
+
+.spaceBottomL {
+  padding-bottom: 3em;
 }
 
 .spaceBottomM {
