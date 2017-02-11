@@ -26,7 +26,7 @@ class Login extends Component {
 
   render() {
     return (
-    <Row className="form-horizontal">
+    <Row className="form-horizontal left">
         <form onSubmit={this.handleSubmit.bind(this)}>
           <FormGroup>
             <ControlLabel className="whiteText">Email</ControlLabel>

@@ -32,8 +32,7 @@ class Welcome extends Component {
     return(
       <div>
         <Row>
-            <p className="logo text-center">Duet</p>
-
+            <p className="logo text-center fade">Haven</p>
         </Row>
         <Row>
           <Col className="col-md-8 col-md-offset-2">

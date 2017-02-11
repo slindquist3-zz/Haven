@@ -20,16 +20,28 @@ class Nav extends Component {
       return <li role="presentation"><Link to={item.URI} className="whiteText"> {item.name}</Link></li>
     })
     return(
-      <Row className="blackBackground">
-          <nav>
-            <ul className="nav nav-pills rounded">
-              {formattedLinks}
-            </ul>
-          </nav>
-      </Row>
-    )
-  }
-}
+            <nav className="navbar navbar-default">
+              <div className="container-fluid">
+                <div className="navbar-header">
+                  <button type="button" className="navbar-toggle collapsed" data-toggle="collapse">
+                    <span>Toggle navigation</span>
+                    <span className="icon-bar"></span>
+                    <span className="icon-bar"></span>
+                    <span className="icon-bar"></span>
+                  </button>
+                </div>
+                <div className="collapse navbar-collapse">
+                  <ul className="nav navbar-nav center">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/signup">Sign Up</a></li>
+                    <li><a href="/profile">Your Profile</a></li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          )
+        }
+      }
 
 
 function mapStateToProps(state) {

@@ -7,7 +7,23 @@ melon: #F3E3CA
 
 
 body {
-  background: linear-gradient(to right, #ffccac 0%, #ffccac 10%, white 10%, white 90%, #c1e1dc 90%, #c1e1dc 100%);
+  /*background-image: url("");*/
+  background-position: right;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.fade
+{
+        opacity:1;
+}
+.fade:hover
+{
+        opacity:.5;
+}
+
+.center {
+  text-align: center;
 }
 
 /*body {
@@ -37,7 +53,8 @@ h1 {
 
 .logo {
   font-family: 'Quicksand', sans-serif;
-  font-size: 14em;
+  font-size: 10em;
+  text-align: center;
 
 }
 
