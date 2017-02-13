@@ -29,19 +29,27 @@ class Login extends Component {
     <Row className="form-horizontal left">
         <form onSubmit={this.handleSubmit.bind(this)}>
           <FormGroup>
-            <ControlLabel className="whiteText">Email</ControlLabel>
+            {/* <ControlLabel className="whiteText">Email</ControlLabel> */}
             <FormControl
+              className="input-lg"
+              placeholder="Email"
               type="text"
               onChange={this.handleEmailChange.bind(this)}/>
           </FormGroup>
           <FormGroup>
-            <ControlLabel className="whiteText">Password</ControlLabel>
+            {/* <ControlLabel className="whiteText">Password</ControlLabel> */}
             <FormControl
-            type="password"
-            onChange={this.handlePasswordChange.bind(this)}/>
+              className="input-lg"
+              placeholder="Password"
+              type="password"
+              onChange={this.handlePasswordChange.bind(this)}/>
           </FormGroup>
           <FormGroup>
-            <Button className= "whiteButton" type="submit">Login</Button>
+            <Row>
+            <Button className="buttonOverride btn btn-default btn-lg btn-block" type="submit">Login</Button>
+
+
+            </Row>
           </FormGroup>
       </form>
     </Row>

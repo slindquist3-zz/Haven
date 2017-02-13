@@ -88,9 +88,12 @@ class Profile extends Component {
     let dropdownEdit = this.dropdown(this.props.editing);
     let boards = this.props.boards.map((board) => {
       return (
-        <h3><Button className="blackLinks" onClick={this.handleOnClick.bind(this)} value={board.id}>{board.title.toLowerCase()}</Button></h3>
+        <h4><Button className="boardButtonOverride btn-lg" onClick={this.handleOnClick.bind(this)} value={board.id}>{board.title}</Button></h4>
     )
-    })
+    }
+  )
+  let theseBoards = boards.slice(1, boards.length - 1)
+
 
 
     return(<div className="text-center">
@@ -106,10 +109,10 @@ class Profile extends Component {
         <Col lg={6} md={6} sm={6} xs={6} lgOffset={3} mdOffset={3} smOffset={3} xsOffset={3} className="spaceBottomM">
           <form onSubmit={this.handleCreate.bind(this)} value={this.props.currentUser.id}>
             <FormGroup className="spaceBottomS">
-              <FormControl type="text" placeholder="Board Title" onChange={this.handleTitleChange.bind(this)} value={this.state.title} />
-              <FormControl type="text" placeholder="Other User's Email" onChange={this.handleOtherUserChange.bind(this)} value={this.state.otherUserEmail} />
+              <FormControl className="input-lg" type="text" placeholder="Board Title" onChange={this.handleTitleChange.bind(this)} value={this.state.title} />
+              <FormControl className="input-lg" type="text" placeholder="Other User's Email" onChange={this.handleOtherUserChange.bind(this)} value={this.state.otherUserEmail} />
             </FormGroup>
-            <Button type="submit">
+            <Button className="btn-lg" type="submit">
               Create New Board
             </Button>
           </form>
@@ -118,10 +121,10 @@ class Profile extends Component {
       <Row>
         <Col lg={8} md={8} sm={8} xs={8} lgOffset={2} mdOffset={2} smOffset={2} xsOffset={2} className="spaceTopS spaceBottomS">
 
-          <p className="lesserHeadings">Your Boards</p>
+          <strong><p className="lesserHeadings">Your Boards</p></strong>
             <div>
             <Col lg={8} md={8} sm={8} xs={8} lgOffset={2} mdOffset={2} smOffset={2} xsOffset={2}>
-                {boards}
+                {theseBoards}
             </Col>
             </div>
         </Col>

@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux'
 import { Grid } from 'react-bootstrap'
 import Nav from './Nav'
-import FastLogin from './FastLogin'
 import $ from 'jquery'
 // import '../App.css';
 

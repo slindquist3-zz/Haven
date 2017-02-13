@@ -7,7 +7,6 @@ import Login from './components/Login'
 import Logout from './components/Logout'
 import Board from './components/Board'
 import Welcome from './components/Welcome'
-import FastLogin from './components/FastLogin'
 
 
 

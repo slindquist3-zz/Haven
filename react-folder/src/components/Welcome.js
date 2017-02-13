@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import { Row, Col, Form, FormGroup, FormControl, ControlLabel, HelpBlock, Button } from 'react-bootstrap'
+import { Row, Col, Form, FormGroup, FormControl, ControlLabel, HelpBlock, Button} from 'react-bootstrap'
 import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
 import { browserHistory } from 'react-router'
@@ -30,9 +30,11 @@ class Welcome extends Component {
   }
   render(){
     return(
-      <div>
+      <div className="slide-up-page">
+        <div>
+
         <Row>
-            <p className="logo text-center fade">Haven</p>
+          <p className="logo text-center fade">Haven</p>
         </Row>
         <Row>
           <Col className="col-md-8 col-md-offset-2">
@@ -40,6 +42,7 @@ class Welcome extends Component {
         </Row>
           <Login />
       </div>
+    </div>
     )
   }
 }

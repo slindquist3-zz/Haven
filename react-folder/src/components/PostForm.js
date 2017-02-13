@@ -83,7 +83,7 @@ class PostForm extends Component {
                 <FormControl type="text" onChange={this.handleStatusChange.bind(this)} value={this.state.content}/>
               </FormGroup>
 
-              <Button type="submit">Post</Button>
+              <Button className="btn-lg" type="submit">Post</Button>
             </form>
       )
     } else if (method === "image") {
@@ -106,8 +106,8 @@ class PostForm extends Component {
         <Row className="spaceBottomM">
           <Col lg={8} md={8} sm={8} xs={8} lgOffset={2} mdOffset={2} smOffset={2} xsOffset={2}>
             <ButtonGroup>
-              <Button value="text" onClick={this.handlePost.bind(this)}>Message</Button>
-              <Button value="image" onClick={this.handlePost.bind(this)}>Photo</Button>
+              <Button className="btn-lg" value="text" onClick={this.handlePost.bind(this)}>Message</Button>
+              <Button className="btn-lg" value="image" onClick={this.handlePost.bind(this)}>Photo</Button>
             </ButtonGroup>
           </Col>
         </Row>
