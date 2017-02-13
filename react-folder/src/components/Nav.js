@@ -1,9 +1,7 @@
 import React, {Component} from 'react'
-// import { bindActionCreators } from 'redux'
 import { Row, Col } from 'react-bootstrap'
 import { connect } from 'react-redux'
 import { Link } from 'react-router'
-// import '../../public/media/welcome-1.jpg'
 
 class Nav extends Component {
 
