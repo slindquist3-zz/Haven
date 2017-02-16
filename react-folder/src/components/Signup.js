@@ -31,31 +31,27 @@ class Signup extends Component {
   render(){
 
     return(
-      <Row >
-        <Col lg={3} md={3} sm={3} className="centered">
+      <div>
+        <h1 className="signUpCopy spaceTopSM spaceBottomS"> Create an Account with Haven.</h1>
+        <Row className="form-horizontal">
           <div>
-          <h3 className="whiteText">Sign Up</h3>
-          <form onSubmit={this.handleSubmit.bind(this)} className="centered">
+          <form onSubmit={this.handleSubmit.bind(this)}>
             <FormGroup>
-              <ControlLabel className="whiteText">Name</ControlLabel>
-              <FormControl type="text" onChange={this.handleNameChange.bind(this)}/>
+              <FormControl className="center input-lg" type="text" placeholder="What's your name?" onChange={this.handleNameChange.bind(this)}/>
             </FormGroup>
-
             <FormGroup>
-              <ControlLabel className="whiteText">Email</ControlLabel>
-              <FormControl type="text" onChange={this.handleEmailChange.bind(this)}/>
+              <FormControl className="center input-lg" type="text" placeholder="Enter your email here." onChange={this.handleEmailChange.bind(this)}/>
             </FormGroup>
-
             <FormGroup>
-              <ControlLabel className="whiteText">Password</ControlLabel>
-              <FormControl type="password" onChange={this.handlePasswordChange.bind(this)}/>
+              <FormControl className="center input-lg" type="password" placeholder="Pick a strong password." onChange={this.handlePasswordChange.bind(this)}/>
             </FormGroup>
-
-            <Button type="submit">Signup</Button>
+            <FormGroup>
+              <Button className="spaceTopS signUpButton btn-default btn-lg btn-block" type="submit">Signup</Button>
+            </FormGroup>
           </form>
         </div>
-        </Col>
       </Row>
+    </div>
     )
   }
 }

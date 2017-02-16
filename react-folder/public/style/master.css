@@ -12,15 +12,29 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
-.Comfortaa{
+.Montserrat{
   font-family: 'Montserrat', sans-serif;
   letter-spacing: .12em;
+}
+
+.signUpCopy {
+  font-family: Helvetica;
+  font-size: 5em;
+  font-weight: bold;
+  text-align: center;
 }
 
 
 .loginButton {
   width: 19em;
   margin-left: .8em;
+}
+
+.signUpButton {
+  width: 19em;
+  margin-right: 90em;
+  height: 2.5em;
+  padding-top: 65px;
 }
 
 .buttonOverride {

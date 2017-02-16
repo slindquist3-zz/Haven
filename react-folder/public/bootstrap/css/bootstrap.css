@@ -4508,7 +4508,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-default {
   background-color: #ccecff;
   border-color: #e7e7e7;
-  border-radius: 20px;
+  border-radius: 5em;
 
 }
 .navbar-default .navbar-brand {
@@ -4527,9 +4527,10 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-  color: black;
-  background-color: white;
+  color: white;
+  background-color: transparent;
   border-color: black;
+  border-radius: 5em;
 }
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,

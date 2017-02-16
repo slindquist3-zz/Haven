@@ -69,7 +69,7 @@ class Board extends Component {
         {dropdownEdit}
         </Col>
       </Row> */}
-      <Row className="spaceBottomXL">
+      <Row className="spaceBottomL">
         <Col lg={12} md={12} sm={12} xs={12}>
           <h1 className="text-center">{this.props.board.title}</h1>
           <h3 className="text-center">This board belongs to {this.props.board.users[0].name} & {this.props.board.users[1].name}.</h3>
