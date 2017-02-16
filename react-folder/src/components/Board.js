@@ -32,10 +32,6 @@ class Board extends Component {
   }
 
   handleDelete(event) {
-    // value.value = board id
-      // event.target.attributes.value.value
-    // class.value = user id
-      // event.target.attributes.class.value
     this.props.boardDelete(this.props.board.id, this.props.currentUserID);
   }
 

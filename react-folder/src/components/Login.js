@@ -46,7 +46,7 @@ class Login extends Component {
           </FormGroup>
           <FormGroup>
             <Row>
-            <Button className="buttonOverride btn btn-default btn-lg btn-block" type="submit">Enter</Button>
+            <Button className="loginButton btn btn-default btn-lg btn-block" type="submit">Enter</Button>
 
 
             </Row>

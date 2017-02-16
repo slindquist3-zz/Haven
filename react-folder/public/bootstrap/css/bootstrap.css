@@ -4506,8 +4506,10 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
 }
 .navbar-default {
-  background-color: #F0FFFF;
+  background-color: #ccecff;
   border-color: #e7e7e7;
+  border-radius: 20px;
+
 }
 .navbar-default .navbar-brand {
   color: #777;
@@ -4518,15 +4520,15 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   background-color: transparent;
 }
 .navbar-default .navbar-text {
-  color: #777;
+  color: black;
 }
 .navbar-default .navbar-nav > li > a {
-  color: #777;
+  color: gray;
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
   color: black;
-  background-color: #C1F0F6;
+  background-color: white;
   border-color: black;
 }
 .navbar-default .navbar-nav > .active > a,
