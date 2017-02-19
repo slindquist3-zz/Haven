@@ -19,7 +19,7 @@ class ImagesController < ApplicationController
       board = Board.find(image.user_board.board.id)
 
       rawImages = board.user_boards.map {|user_board| user_board.images}.flatten
-          # [{Post}, {}, {}]
+
       order_images = rawImages.sort_by {|image|
         image.created_at}.reverse
 
@@ -35,7 +35,6 @@ class ImagesController < ApplicationController
   def show
     image = Image.find(params[:id])
     render json: {image: image}
-    #what goes here?
   end
 
   def update
