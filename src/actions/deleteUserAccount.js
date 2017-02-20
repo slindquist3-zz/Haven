@@ -5,7 +5,7 @@ import { browserHistory } from 'react-router'
 export default function deleteUserAccount(userID){
   return function (dispatch) {
     $.ajax({
-     url: `http://localhost:3000/users/${userID}`,
+     url: `https://haven-rails-api.herokuapp.com/users/${userID}`,
      type: 'DELETE',
      data: {user_id: userID},
    }).done(function(response){

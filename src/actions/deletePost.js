@@ -4,7 +4,7 @@ import $ from 'jquery'
 export default function deletePost(postID, boardID){
   return function (dispatch) {
     $.ajax({
-     url: `http://localhost:3000/posts/${postID}`,
+     url: `https://haven-rails-api.herokuapp.com/posts/${postID}`,
      type: 'DELETE',
      data: JSON.stringify({post: {id: postID, board_id: boardID}}),
      dataType: 'json',

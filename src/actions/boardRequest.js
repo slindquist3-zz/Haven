@@ -4,7 +4,7 @@ import $ from 'jquery'
 export default function boardRequest(formValue) {
   return function(dispatch) {
   $.ajax({
-     url: `http://localhost:3000/boards/${formValue}`,
+     url: `https://haven-rails-api.herokuapp.com/boards/${formValue}`,
      type: 'GET'
     //  data: { item: item },
     //  success: () => { return{type:"FETCH_BOARD", payload: board}}

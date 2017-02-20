@@ -4,7 +4,7 @@ import $ from 'jquery'
 export default function boardDelete(boardID, userID) {
   return function(dispatch) {
   $.ajax({
-     url: `http://localhost:3000/boards/${boardID}`,
+     url: `https://haven-rails-api.herokuapp.com/boards/${boardID}`,
      type: 'DELETE',
      data: { user_id: userID }
   }).done(function(response){

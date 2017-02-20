@@ -4,7 +4,7 @@ import $ from 'jquery'
 export default function updateBoard(title, boardID, currentUserID) {
   return function(dispatch) {
   $.ajax({
-     url: `http://localhost:3000/boards/${boardID}`,
+     url: `https://haven-rails-api.herokuapp.com/boards/${boardID}`,
      type: 'PUT',
      data: { title: title, board_id: boardID, current_user_id: currentUserID },
     //  success: () => { return{type:"FETCH_BOARD", payload: board}}
