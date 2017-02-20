@@ -4,7 +4,7 @@ import rootReducer from '../reducers/root-reducer'
 import thunk from 'redux-thunk';
 export default function configureStore(initialState) {
   const finalCreateStore = compose(
-    applyMiddleware(ReduxPromise),
+    applyMiddleware(thunk),
     // maybe use promises here?
     window.devToolsExtension ? window.devToolsExtension() : f => f
     )(createStore);
