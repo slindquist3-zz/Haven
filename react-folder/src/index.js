@@ -3,14 +3,13 @@ import ReactDOM from 'react-dom'
 import { Provider } from 'react-redux'
 import routes from './routes';
 import { Router, browserHistory } from 'react-router'
-import { store } from './store'
-// import $ from 'jquery'
-// import './index.css';s
+// import { store } from './store'
 import '../public/bootstrap/css/bootstrap.css'
 import '../public/style/master.css'
 import '../public/style/typography.css'
-// import '../public/bootstrap/js/bootstrap.js'
-// import App from './components/App';
+import configureStore from './store/configureStore';
+
+export const store = configureStore()
 
 ReactDOM.render(
   <div className="c">
