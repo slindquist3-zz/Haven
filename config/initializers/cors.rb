@@ -7,7 +7,7 @@
 
 Rails.application.config.middleware.insert_before 0, Rack::Cors do
   allow do
-    origins 'https://git.heroku.com/haven-rails-api.git'
+    origins '*'
 
     resource '*',
       headers: :any,
