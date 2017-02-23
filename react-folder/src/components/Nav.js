@@ -22,9 +22,9 @@ class Nav extends Component {
               <div className="container-fluid">
                 <div className="collapse navbar-collapse">
                   <ul className="nav navbar-nav center">
-                    <li><a className="Montserrat" href="/">HOME</a></li>
-                    <li><a className="Montserrat" href="/signup">SIGN UP</a></li>
-                    <li><a className="Montserrat" href="/profile">PROFILE</a></li>
+                    <li><a className="Roboto" href="/">HOME</a></li>
+                    <li><a className="Roboto" href="/signup">SIGN UP</a></li>
+                    <li><a className="Roboto" href="/profile">PROFILE</a></li>
                   </ul>
                 </div>
               </div>
