@@ -14,3 +14,5 @@ export default function boardRequest(formValue) {
   })
   }
 }
+
+//figure out why i used ajax
